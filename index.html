@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="address-container">
+        <!-- Initial Address Form -->
+        <div class="address-form">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+
+            <label for="address1">Address Line 1:</label>
+            <input type="text" name="address1">
+
+            <label for="address2">Address Line 2:</label>
+            <input type="text" name="address2">
+
+            <label for="city">City:</label>
+            <input type="text" name="city">
+
+            <label for="state">State:</label>
+            <input type="text" name="state">
+
+            <label for="country">Country:</label>
+            <select name="country" id="country-dropdown">
+            </select>
+
+            <button class="add-btn">Submit</button>
+            <button class="add-new-button" onclick=addNewAddress()>Add New</button>
+        </div>
+        
+    </div>
+</body>
+</html>
