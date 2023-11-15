@@ -1,15 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address app</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+   
 </head>
-<body>
+<body onload="readAll()">
     <div id="address-container">
         <!-- Initial Address Form -->
-        <div class="address-form">
+         <button class="add-btn" onclick="showForm()">Add+</button> <br/>
+        <div class="address-form" id="my-form">
             <label for="name">Name</label>
             <input type="text" name="name">
 
@@ -29,10 +31,25 @@
             <select name="country" id="country-dropdown">
             </select>
 
-            <button class="add-btn">Submit</button>
-            <button class="add-new-button" onclick=addNewAddress()>Add New</button>
+            <button class="submit-btn"  onclick="submitForm()">Submit</button>
+             <!-- <button class="add-btn" onclick="showForm()">Add New</button> -->
+            <!-- <button class="add-new-button" onclick="addNewAddress()">Add New</button> -->
         </div>
-        
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Address Line 1</th>
+                <th>Address Line 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+            </thead>
+            <tbody class="table-body">
+
+            </tbody>
+        </table>
     </div>
+    <script src="script.js" defer></script>
 </body>
+ 
 </html>
